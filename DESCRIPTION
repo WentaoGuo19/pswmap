@@ -1,0 +1,31 @@
+Package: pswmap
+Title: Propensity-Score-Weighted Meta-Analytic Predictive Priors with Missing External Covariates
+Version: 0.1.0
+Authors@R: c(
+    person("Wentao", "Guo", email = "Wentao.Guo@colostate.edu", role = c("aut", "cre")),
+    person(c("Angela", "Y."), "Zhu", email = "angela.zhu@boehringer-ingelheim.com", role = "aut"))
+Description: Borrows external control data (for example historical trials or real-world data) for the control arm of
+    a randomized trial through a propensity-score-weighted meta-analytic predictive (PSW-MAP) prior. A propensity
+    score is estimated separately for each external source, each source is summarized by its odds-weighted (Hajek)
+    mean and design-based variance, and the summaries are combined in a robust meta-analytic predictive prior.
+    Baseline covariates that are missing in the external data are handled by complete-case weighting, by native
+    missing-data handling of the propensity score learner, or by multiple imputation within each source combined by
+    Rubin's rules. An analysis of the trial alone is available as a reference. Continuous outcomes are supported.
+License: GPL (>= 3)
+URL: https://github.com/WentaoGuo19/pswmap
+BugReports: https://github.com/WentaoGuo19/pswmap/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+    RBesT (>= 1.7.0),
+    mice,
+    stats
+Suggests:
+    bartMachine,
+    ranger,
+    xgboost,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1
