@@ -1,6 +1,6 @@
 Package: pswmap
 Title: Propensity-Score-Weighted Meta-Analytic Predictive Priors with Missing External Covariates
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person("Wentao", "Guo", email = "Wentao.Guo@colostate.edu", role = c("aut", "cre")),
     person(c("Angela", "Y."), "Zhu", email = "angela.zhu@boehringer-ingelheim.com", role = "aut"))
